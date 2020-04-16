@@ -2,7 +2,7 @@ const assert = require('assert');
 
 const updateInterns = function(db, callback) {
     const myQuery = { movie: "The Banker" };
-    const newValues = { $set: { movie: "No Budget", year: 2020, rating: '9' } };
+    const newValues = { $set: { movie: "Birds of prey", year: 2020, rating: '10' } };
     // const myQuery = { movie: "No Budget" };
     // const newValues = { $set: { movie: "The Banker", year: 2020, rating: '5' } };
     const collection = db.collection('myMovies');
@@ -13,7 +13,7 @@ const updateInterns = function(db, callback) {
                 // Prints out the newly updated collection
             collection.find({}).toArray(function(err, docs) {
                 assert.equal(err, null);
-                console.log(`\n The Newly Updated Collection is as follows:`);
+                console.log(`\n The New Updated Collection is as follows:`);
                 console.log(docs);
                 callback(docs);
             });

@@ -1,0 +1,8 @@
+While ensuring your mongod server is running, in the same folder you used for task 2, rename the JS file that you used in creating interns collection as interns.js. Also create files with names findInterns.js and updateInterns.js.
+Create a new image.md as well, and switch to a new git branch. Name the branch crud-basics
+In the interns.js file, create a collection called myMovies with the following documents inserted: [ {movie: "The Banker", year: "2020", rating: 8},  {movie: "Bad Boys", year: "2020", rating: 7}, {movie: "The Hunt", year: "2020", rating: 7}, {movie: "Bloodshot", year: "2020", rating: 7.5}, {movie: "First Cow", year: "2020", rating: 6.5} ]. Your function should print the result of your insertion to the console. Take a screenshot and include it in your image.md file,
+![myMovies](https://github.com/dyn4casie/mongodb-basics/blob/master/images/Screenshot%20(333).png)
+In the findInterns.js file, write a function making use of appropriate methods and queries to return (a) the first document in the collection (b) all movies with a rating of 7 and (c) use a projection object to return only movie titles and nothing else. Take a screenshot of your query results and include it in your image.md file.
+![first_document,all_movies_rated_7,only_movie_titles](https://github.com/dyn4casie/mongodb-basics/blob/master/images/Screenshot%20(334).png)
+Finally, in your updateInterns.js file, update the movie with title "The Banker", to any movie of your choice, ensure all other properties (year and rating) are updated accordingly. Log the updated collection to the console and take a screenshot. Include your screenshot in your image.md file.
+![updateInterns](https://github.com/dyn4casie/mongodb-basics/blob/master/images/Screenshot%20(336).png)
